@@ -1,0 +1,22 @@
+{
+  "name": "lesson-10",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.5.0",
+    "gulp-concat": "^2.6.1",
+    "parcel": "^2.5.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1",
+    "browserslist": "^4.21.5",
+    "swiper": "^8.2.2"
+  }
+}

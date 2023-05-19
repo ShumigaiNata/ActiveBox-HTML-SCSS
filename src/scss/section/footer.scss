@@ -1,0 +1,91 @@
+@import "../mixin";
+@import "../variables";
+@import "../fonts";
+
+.footers{
+  background: $blue;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 69px 0;
+  @media (max-width: 1024px) {
+    padding: 43px 0 40px;
+  }
+  @media (max-width: 768px) {
+    padding: 34px 0 33px;
+    flex-direction: column;
+  }
+
+  &-content {
+    width: 33%;
+    color: $white;
+    margin: 0 15px;
+    @media (max-width: 1024px) {
+      margin: 0;
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    &__title{
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: $h5;
+      line-height: $lh7;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: $lh7-1024;
+        margin-bottom: 17px;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 35px;
+      }
+    }
+
+    &__description{
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $h5;
+      line-height: $lh7;
+      text-transform: capitalize;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: $lh7-1024;
+      }
+
+      @media (max-width: 768px) {
+        margin-bottom: 70px;
+      }
+
+    }
+    &__connect{
+      @media (max-width: 768px) {
+        margin-bottom: 0;
+      }
+    }
+    &__icon svg{
+      margin: 18px 12px 0;
+      @include icon;
+      @media (max-width: 1024px) {
+        margin: 10px 10px 0;
+      }
+      &:hover{
+        transform: translatey(10px);
+      }
+
+      @media (max-width: 768px) {
+        margin: 0 8px 59px;
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+}

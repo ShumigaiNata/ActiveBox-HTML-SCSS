@@ -1,0 +1,44 @@
+//@import "../variables";
+//@import "../mixin";
+//.list{
+//  display: flex;
+//  flex-direction: row;
+//  border: 2px solid $red;
+//  background: $grey;
+//
+//  @media (max-width: 768px) {
+//    flex-direction: column;
+//  }
+//
+//  &-item{
+//    margin-left: 30px;
+//    background: $grey;
+//
+//    @media (max-width: 768px) {
+//      background: $grey;
+//    }
+//
+//    &__link{
+//      text-decoration: none;
+//      color: aqua;
+//      transition: 0.3s;
+//
+//      &:hover{
+//        color: grey;
+//      }
+//    }
+//  }
+//}
+//
+//.u{
+//  color: cyan;
+//  background: $grey;
+//}
+//
+//.block{
+//  display: flex;
+//
+//  &__item{
+//    @include card;
+//  }
+//}

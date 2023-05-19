@@ -1,0 +1,42 @@
+@import "variables";
+
+@mixin wrapper {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+@mixin btn {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: $h4;
+  line-height: $lh6;
+  width: 32%;
+  padding: 25px 0;
+  color: #ffffff;
+  background: #FF4343;
+  border: none;
+  transition: 0.8s;
+  cursor: pointer;
+
+  &:hover {
+    background: #e71414;
+    transform: scale(1.1);
+    @media (max-width: 768px) {
+      transform: translateY(15px);
+    }
+  }
+
+  &:active {
+    background: #ff4343;
+    box-shadow: 4px 4px 30px #ff4343;
+   }
+}
+
+@mixin icon {
+  &:hover {
+    cursor: pointer;
+  }
+}

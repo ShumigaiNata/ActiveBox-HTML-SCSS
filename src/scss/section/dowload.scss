@@ -1,0 +1,60 @@
+@import "../variables";
+@import "../mixin";
+@import "../fonts";
+
+.download {
+  text-align: center;
+
+  &__title {
+    margin: 150px 0 23px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: $h3;
+    line-height: 35px;
+    color: $black;
+    @media (max-width: 1024px) {
+      margin: 110px 0 23px;
+      font-size: $h2-1024;
+      line-height: $lh5-1024;
+    }
+    @media (max-width: 768px) {
+      font-size: $h2-768;
+      line-height: $lh5-768;
+      margin: 70px 0 23px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 50px;
+    font-size: $h5;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: $lh7;
+    color: $black;
+    text-transform: uppercase;
+    @media (max-width: 1024px) {
+      font-size: 14px;
+      line-height: $lh7-1024;
+      margin-bottom: 43px;
+    }
+    @media (max-width: 768px) {
+      font-size: $h5-768;
+      line-height: 15px;
+      margin-bottom: 13px;
+    }
+  }
+
+  &__btn {
+    @include btn;
+    @media (max-width: 1024px) {
+      font-size: $h4-1024;
+      line-height: $lh6-1024;
+    }
+    @media (max-width: 768px) {
+      margin-bottom: 45px;
+      width: 100%;
+    }
+  }
+}

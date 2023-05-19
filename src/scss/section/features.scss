@@ -1,0 +1,78 @@
+@import "../mixin";
+@import "../fonts";
+@import "../variables";
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 26px 0 114px 0;
+  margin: 0 -10px;
+  @media (max-width: 1024px) {
+    padding: 24px 0 80px;
+  }
+  @media (max-width: 768px) {
+    padding: 0 0 34px;
+    flex-direction: column;
+  }
+
+  &-content {
+    width: 33.3%;
+    text-align: center;
+    margin-top: 88px;
+    padding: 0 10px;
+    @media (max-width: 1024px) {
+      margin-top: 50px;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 40px;
+      width: 100%;
+    }
+
+    &__img img {
+      margin-bottom: 50px;
+      max-width: 29%;
+      @media (max-width: 1024px) {
+        margin-bottom: 44px;
+        max-width: 26%;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 30px;
+        max-width: 25%;
+      }
+    }
+
+    &__title {
+      margin-bottom: 40px;
+      font-size: $h4;
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 900;
+      line-height: $lh6;
+      color: $graphite;
+      text-transform: uppercase;
+      @media (max-width: 1024px) {
+        font-size: $h4-1024;
+        margin-bottom: 21px;
+        line-height: $lh6-1024;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 10px;
+      }
+    }
+
+    &__description {
+      font-family: 'Raleway', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: $h5;
+      line-height: $lh7;
+      color: $grey;
+      @media (max-width: 1024px) {
+        font-size: 14px;
+        line-height: $lh7-1024;
+      }
+    }
+  }
+}
